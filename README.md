@@ -19,7 +19,7 @@ tNet.GetCharacterByPlayerSrc(playerSrc)
 ## Character Roles
 ```lua
 -- Retorna os cargos atribuídos ao personagem.
-local roles = character.getRoles()
+local roles = character:getRoles()
 --[[
     [
         {
@@ -32,13 +32,13 @@ local roles = character.getRoles()
 ]]
 
 -- Atribuí cargo ao personagem.
-character.addRole(roleId)
+character:addRole(roleId)
 
 -- Remove cargo do personagem.
-character.removeRole(roleId)
+character:removeRole(roleId)
 
 -- Atualiza a hierarquia do cargo do persoangem.
-character.updateRoleRank(currentRoleRank, newRoleRank)
+character:updateRoleRank(currentRoleRank, newRoleRank)
 ```
 
 ## Groups
