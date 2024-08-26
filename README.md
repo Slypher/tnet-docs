@@ -1,6 +1,7 @@
 # tNet - Gamemode
 
 * [Character](#character)
+    * [Inventory](#character-inventory)
     * [Roles](#character-roles)
 * [Groups](#groups)
 
@@ -15,7 +16,26 @@ tNet.GetCharacterById(characterId)
 tNet.GetCharacterByPlayerSrc(playerSrc)
 ```
 `tNet.GetCharacters()` Retorna uma tabela contendo o objeto de todos os personagens ativos no servidor.
-
+```lua
+-- Formas para obter o nome do personagem:
+character:getName() -- Nome completo (first and last name)
+character:getFirstName() -- Primeiro nome
+character:getLastName() -- Sobrenome
+```
+## Character Inventory
+```lua
+character:getInventory()
+character:getInventoryItem(itemName, metadata)
+character:addInventoryItem(itemName, count, metadata, slot)
+character:removeInventoryItem(itemName, count, metadata, slot)
+character:setInventoryItem(itemName, count, metadata)
+character:canCarryItem(itemName, count, metadata)
+character:hasItem(itemName, metadata)
+character:clearInventory()
+character:getWeight()
+character:getMaxWeight()
+character:setMaxWeight(newWeight)
+```
 ## Character Roles
 ```lua
 -- Retorna os cargos atribuídos ao personagem.
