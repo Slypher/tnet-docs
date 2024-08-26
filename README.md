@@ -8,6 +8,11 @@
 
 ## User
 ```lua
+-- Retorna o id do usuário através da source do jogador
+tNet.GetUserIdByPlayerSrc(playerSrc)
+```
+Formas para obter o objeto do usuário:
+```lua
 -- Através do id do usuário
 tNet.GetUserById(userId)
 -- Através do source do jogador
@@ -17,7 +22,10 @@ tNet.GetUserByCharacterId(characterId)
 ```
 `tNet.GetUsers()` Retorna uma tabela contendo o objeto de todos os usuários ativos no servidor.
 ## Character
-
+```lua
+-- Retorna o id do personagem através da source do jogador
+tNet.GetCharacterIdByPlayerSrc(playerSrc)
+```
 Formas para obter o objeto do personagem:
 ```lua
 -- Através do id do personagem
