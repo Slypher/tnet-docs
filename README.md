@@ -1,10 +1,21 @@
 # tNet - Gamemode
 
+* [User](#user)
 * [Character](#character)
     * [Inventory](#character-inventory)
     * [Roles](#character-roles)
 * [Groups](#groups)
 
+## User
+```lua
+-- Através do id do usuário
+tNet.GetUserById(userId)
+-- Através do source do jogador
+tNet.GetUserByPlayerSrc(playerSrc)
+-- Através do personagem ativo
+tNet.GetUserByCharacterId(characterId)
+```
+`tNet.GetUsers()` Retorna uma tabela contendo o objeto de todos os usuários ativos no servidor.
 ## Character
 
 Formas para obter o objeto do personagem:
