@@ -81,10 +81,10 @@ character:updateRoleRank(currentRoleRank, newRoleRank)
 ```
 
 ## Groups
+Formas para obter o objeto do grupo:
 ```lua
--- Retorna o objeto do grupo
-local group = tNet.GetGroupById(groupId)
-
--- Retorna os membros do grupo
-local groupMembers = group:getMembers()
+-- Através do id do grupo
+tNet.GetGroupById(groupId)
+-- Através do nome (interno) do grupo
+tNet.GetGroupByName(groupName) -- (ex: police, medical, etc...)
 ```
